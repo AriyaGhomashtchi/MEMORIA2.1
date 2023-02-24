@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragement1">
+
+    <fragment
+        android:id="@+id/fragement1"
+        android:name="com.ghomashtchi.memoria.ui.SplashScreen_fragment"
+        android:label="fragment_fragement1"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_fragement1_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.ghomashtchi.memoria.ui.LogIn_fragment"
+        android:label="fragment_fragment2"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_fragment2_to_hausapotheke_fragment"
+            app:destination="@id/hausapotheke_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hausapotheke_fragment"
+        android:name="com.ghomashtchi.memoria.ui.Hausapotheke_fragment"
+        android:label="Hausapotheke_fragment"
+        tools:layout="@layout/fragment_hausapotheke"/>
+</navigation>
