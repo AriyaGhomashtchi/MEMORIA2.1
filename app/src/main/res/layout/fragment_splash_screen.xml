@@ -8,9 +8,10 @@
     tools:context=".ui.SplashScreen_fragment">
 
     <ImageView
-        android:id="@+id/textView"
+        android:id="@+id/logIn_backround_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:scaleType="center"
         android:src="@drawable/log_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
