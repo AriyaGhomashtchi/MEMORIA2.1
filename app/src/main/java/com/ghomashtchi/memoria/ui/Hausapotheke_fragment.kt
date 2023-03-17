@@ -14,6 +14,7 @@ import com.ghomashtchi.memoria.R
  */
 class Hausapotheke_fragment : Fragment() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }

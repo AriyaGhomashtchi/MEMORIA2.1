@@ -7,20 +7,23 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.ghomashtchi.memoria.R
+import com.ghomashtchi.memoria.databinding.FragmentLogInBinding
 
 class LogIn_fragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        }
-    }
+    private lateinit var binding: FragmentLogInBinding
 
-    fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_log_in, container, false)
+        binding = FragmentLogInBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
+}
+
+
 
 
