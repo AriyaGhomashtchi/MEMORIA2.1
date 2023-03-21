@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragement1">
+    app:startDestination="@id/splashScreen_fragment">
 
     <fragment
-        android:id="@+id/fragement1"
+        android:id="@+id/splashScreen_fragment"
         android:name="com.ghomashtchi.memoria.ui.SplashScreen_fragment"
         android:label="fragment_fragement1"
         tools:layout="@layout/fragment_splash_screen" >
         <action
             android:id="@+id/action_fragement1_to_fragment2"
-            app:destination="@id/fragment2" />
+            app:destination="@id/LogIn_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/fragment2"
+        android:id="@+id/LogIn_fragment"
         android:name="com.ghomashtchi.memoria.ui.LogIn_fragment"
         android:label="fragment_fragment2"
         tools:layout="@layout/fragment_log_in" >
@@ -27,5 +27,14 @@
         android:id="@+id/hausapotheke_fragment"
         android:name="com.ghomashtchi.memoria.ui.Hausapotheke_fragment"
         android:label="Hausapotheke_fragment"
-        tools:layout="@layout/fragment_hausapotheke"/>
+        tools:layout="@layout/fragment_hausapotheke">
+        <action
+            android:id="@+id/action_hausapotheke_fragment_to_categoryfragment"
+            app:destination="@id/categoryfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryfragment"
+        android:name="com.ghomashtchi.memoria.ui.Categoryfragment"
+        android:label="Categoryfragment"
+        tools:layout="@layout/category_item"/>
 </navigation>
