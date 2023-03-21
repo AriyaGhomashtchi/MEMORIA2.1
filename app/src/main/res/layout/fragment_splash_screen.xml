@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/memoria_backround"
-    tools:context=".ui.SplashScreen_fragment">
+    tools:context=".ui.SplashScreenFragment">
 
     <ImageView
         android:id="@+id/logIn_backround_image"

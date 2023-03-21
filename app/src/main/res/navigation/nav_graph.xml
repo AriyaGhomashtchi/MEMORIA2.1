@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreen_fragment"
-        android:name="com.ghomashtchi.memoria.ui.SplashScreen_fragment"
+        android:name="com.ghomashtchi.memoria.ui.SplashScreenFragment"
         android:label="fragment_fragement1"
         tools:layout="@layout/fragment_splash_screen" >
         <action

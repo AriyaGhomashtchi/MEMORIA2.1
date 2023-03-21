@@ -9,7 +9,7 @@ import androidx.navigation.Navigation
 import com.ghomashtchi.memoria.R
 import com.ghomashtchi.memoria.databinding.FragmentSplashScreenBinding
 
-class SplashScreen_fragment : Fragment() {
+class SplashScreenFragment : Fragment() {
 
     private var _binding : FragmentSplashScreenBinding? = null
     private val binding get() = _binding!!
