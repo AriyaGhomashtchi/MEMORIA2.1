@@ -11,30 +11,26 @@
         android:label="fragment_fragement1"
         tools:layout="@layout/fragment_splash_screen" >
         <action
-            android:id="@+id/action_fragement1_to_fragment2"
-            app:destination="@id/LogIn_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/LogIn_fragment"
-        android:name="com.ghomashtchi.memoria.ui.LogIn_fragment"
-        android:label="fragment_fragment2"
-        tools:layout="@layout/fragment_log_in" >
-        <action
-            android:id="@+id/action_fragment2_to_hausapotheke_fragment"
-            app:destination="@id/hausapotheke_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/hausapotheke_fragment"
-        android:name="com.ghomashtchi.memoria.ui.Hausapotheke_fragment"
-        android:label="Hausapotheke_fragment"
-        tools:layout="@layout/fragment_hausapotheke">
-        <action
-            android:id="@+id/action_hausapotheke_fragment_to_categoryfragment"
-            app:destination="@id/categoryfragment" />
+            android:id="@+id/action_splashScreen_fragment_to_logIn_Fragment"
+            app:destination="@id/logIn_Fragment" />
     </fragment>
     <fragment
         android:id="@+id/categoryfragment"
         android:name="com.ghomashtchi.memoria.ui.Categoryfragment"
         android:label="Categoryfragment"
         tools:layout="@layout/category_item"/>
+    <fragment
+        android:id="@+id/logIn_Fragment"
+        android:name="com.ghomashtchi.memoria.ui.LogIn_Fragment"
+        android:label="LogIn_Fragment"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_logIn_Fragment_to_hausapothekefragment"
+            app:destination="@id/hausapothekefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hausapothekefragment"
+        android:name="com.ghomashtchi.memoria.ui.Hausapothekefragment"
+        android:label="Hausapothekefragment"
+        tools:layout="@layout/fragment_hausapotheke"/>
 </navigation>

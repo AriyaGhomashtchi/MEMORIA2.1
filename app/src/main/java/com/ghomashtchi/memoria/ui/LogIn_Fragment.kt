@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.ghomashtchi.memoria.R
-import com.ghomashtchi.memoria.databinding.FragmentSplashScreenBinding
+import com.ghomashtchi.memoria.databinding.FragmentLogInBinding
 
-class SplashScreenFragment : Fragment() {
+class LogIn_Fragment : Fragment() {
 
-    private var _binding : FragmentSplashScreenBinding? = null
+    private var _binding : FragmentLogInBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,11 +23,11 @@ class SplashScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentSplashScreenBinding.inflate(inflater, container, false)
+        _binding = FragmentLogInBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.logInBackroundImage.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_splashScreen_fragment_to_logIn_Fragment)
+        binding.loginLoginButton.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_logIn_Fragment_to_hausapothekefragment)
         }
         return view
     }

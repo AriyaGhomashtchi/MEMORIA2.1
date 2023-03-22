@@ -7,11 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ghomashtchi.memoria.databinding.FragmentHausapothekeBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Hausapotheke_fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Hausapothekefragment : Fragment() {
 
     private lateinit var binding: FragmentHausapothekeBinding
