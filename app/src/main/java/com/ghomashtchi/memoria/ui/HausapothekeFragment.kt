@@ -5,23 +5,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import com.ghomashtchi.memoria.R
 import com.ghomashtchi.memoria.databinding.FragmentHausapothekeBinding
 
 class Hausapothekefragment : Fragment() {
 
-    private lateinit var binding: FragmentHausapothekeBinding
+    private var _binding: FragmentHausapothekeBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHausapothekeBinding.inflate(inflater, container, false)
-        // Inflate the layout for this fragment
+        _binding = FragmentHausapothekeBinding.inflate(inflater, container, false)
         val view = binding.root
-        return view
+
+        binding.fragmentHausapotheke.setOnClickListener {
+            Navigation.findNavController(view)
+                .navigate(R.id.action_logIn_Fragment_to_hausapothekefragment)
+        }
+       return view
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // CODE HERE set onClickListener for the button
+        super.onViewCreated(view, savedInstanceState)
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
 

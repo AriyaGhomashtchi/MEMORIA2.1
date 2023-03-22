@@ -27,7 +27,8 @@ class LogIn_Fragment : Fragment() {
         val view = binding.root
 
         binding.loginLoginButton.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_logIn_Fragment_to_hausapothekefragment)
+            Navigation.findNavController(view)
+                .navigate(R.id.action_logIn_Fragment_to_hausapothekefragment)
         }
         return view
     }

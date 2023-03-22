@@ -5,23 +5,43 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.ghomashtchi.memoria.databinding.CategoryItemBinding
+import com.ghomashtchi.memoria.R
+import com.ghomashtchi.memoria.databinding.FragmentCategoryBinding
 
+class CategoryFragment : Fragment() {
 
-class Categoryfragment : Fragment() {
-
-    private lateinit var binding: CategoryItemBinding
+    private var _binding: FragmentCategoryBinding? = null
+    private val binding get() = _binding!!
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = CategoryItemBinding.inflate(inflater, container, false)
-        return binding.root
-
+        return inflater.inflate(R.layout.fragment_category, container, false)
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // CODE HERE set onClickListener for the button
+
+    companion object {
+        /**
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
+         *
+         * @param param1 Parameter 1.
+         * @param param2 Parameter 2.
+         * @return A new instance of fragment CategoryFragment.
+         */
+        // TODO: Rename and change types and number of parameters
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            CategoryFragment().apply {
+                arguments = Bundle().apply {
+
+                }
+            }
     }
 }
