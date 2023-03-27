@@ -41,7 +41,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView13" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView3"
+            android:id="@+id/recyclerview_selection4"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
@@ -50,22 +50,22 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView4"
+            android:id="@+id/recyclerview_selection5"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView3" />
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_selection4" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView5"
+            android:id="@+id/recyclerview_selection6"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView4" />
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_selection5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

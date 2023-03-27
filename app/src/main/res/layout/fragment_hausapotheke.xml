@@ -30,7 +30,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerview_selection1"
         android:layout_width="400dp"
         android:layout_height="80dp"
         android:layout_marginTop="180dp"
@@ -40,16 +40,17 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+        android:id="@+id/recyclerview_selection2"
         android:layout_width="400dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview_selection1" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_selection3"
         android:layout_width="400dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
@@ -57,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview_selection2"
         app:layout_constraintVertical_bias="0.138" />
 
     <ImageView

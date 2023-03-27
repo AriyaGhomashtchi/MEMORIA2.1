@@ -21,9 +21,20 @@ class Hausapothekefragment : Fragment() {
         _binding = FragmentHausapothekeBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.fragmentHausapotheke.setOnClickListener {
+        binding.recyclerviewSelection1.setOnClickListener {
             Navigation.findNavController(view)
-                .navigate(R.id.action_logIn_Fragment_to_hausapothekefragment)
+                .navigate(R.id.action_hausapothekefragment_to_categoryFragment)
+
+        binding.recyclerviewSelection2.setOnClickListener {
+            Navigation.findNavController(view)
+                .navigate((R.id.action_hausapothekefragment_to_categoryFragment))
+
+        binding.recyclerviewSelection3.setOnClickListener {
+            Navigation.findNavController(view)
+                .navigate((R.id.action_hausapothekefragment_to_categoryFragment))
+        }
+
+            }
         }
        return view
     }

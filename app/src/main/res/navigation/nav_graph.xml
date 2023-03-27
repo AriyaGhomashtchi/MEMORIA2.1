@@ -27,10 +27,23 @@
         android:id="@+id/hausapothekefragment"
         android:name="com.ghomashtchi.memoria.ui.Hausapothekefragment"
         android:label="Hausapothekefragment"
-        tools:layout="@layout/fragment_hausapotheke"/>
+        tools:layout="@layout/fragment_hausapotheke">
+        <action
+            android:id="@+id/action_hausapothekefragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.ghomashtchi.memoria.ui.CategoryFragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_produktBesschreibungFragment"
+            app:destination="@id/produktBesschreibungFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/produktBesschreibungFragment"
+        android:name="com.ghomashtchi.memoria.ProduktBesschreibungFragment"
+        android:label="fragment_produkt_besschreibung"
+        tools:layout="@layout/fragment_produkt_besschreibung" />
 </navigation>
