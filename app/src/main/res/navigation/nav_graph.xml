@@ -45,5 +45,14 @@
         android:id="@+id/produktBesschreibungFragment"
         android:name="com.ghomashtchi.memoria.ProduktBesschreibungFragment"
         android:label="fragment_produkt_besschreibung"
-        tools:layout="@layout/fragment_produkt_besschreibung" />
+        tools:layout="@layout/fragment_produkt_besschreibung" >
+        <action
+            android:id="@+id/action_produktBesschreibungFragment_to_hausapothekefragment"
+            app:destination="@id/hausapothekefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mementoFragment"
+        android:name="com.ghomashtchi.memoria.MementoFragment"
+        android:label="fragment_memento"
+        tools:layout="@layout/fragment_memento" />
 </navigation>

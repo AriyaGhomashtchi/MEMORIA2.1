@@ -86,7 +86,7 @@
             tools:text="Pantoprazol-ratiopharm® SK 20 mg enthält den Wirkstoff Pantoprazol,    der eine Art Pumpe, welche die Magensäure herstellt, blockiert. Das hat zur Folge,    dass die Säuremenge im Magen reduziert wird." />
 
         <Button
-            android:id="@+id/button_button2"
+            android:id="@+id/button_add_button"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginEnd="32dp"
