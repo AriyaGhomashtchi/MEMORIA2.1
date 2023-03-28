@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_hausapothekefragment_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_hausapothekefragment_to_mementoFragment"
+            app:destination="@id/mementoFragment" />
     </fragment>
     <fragment
         android:id="@+id/categoryFragment"
