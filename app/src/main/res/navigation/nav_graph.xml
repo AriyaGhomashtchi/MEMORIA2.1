@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_logIn_Fragment_to_hausapothekefragment"
             app:destination="@id/hausapothekefragment" />
+        <action
+            android:id="@+id/action_logIn_Fragment_to_registrationButton"
+            app:destination="@id/registrationButton" />
     </fragment>
     <fragment
         android:id="@+id/hausapothekefragment"
@@ -57,5 +60,19 @@
         android:id="@+id/mementoFragment"
         android:name="com.ghomashtchi.memoria.MementoFragment"
         android:label="fragment_memento"
-        tools:layout="@layout/fragment_memento" />
+        tools:layout="@layout/fragment_memento" >
+        <action
+            android:id="@+id/action_mementoFragment_to_notizenFragment"
+            app:destination="@id/notizenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notizenFragment"
+        android:name="com.ghomashtchi.memoria.NotizenFragment"
+        android:label="fragment_notizen"
+        tools:layout="@layout/fragment_notizen" />
+    <fragment
+        android:id="@+id/registrationButton"
+        android:name="com.ghomashtchi.memoria.RegistrationButton"
+        android:label="fragment_registration_button"
+        tools:layout="@layout/fragment_registration_button" />
 </navigation>
