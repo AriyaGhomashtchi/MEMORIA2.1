@@ -30,7 +30,7 @@ class LogIn_Fragment : Fragment() {
             Navigation.findNavController(view)
                 .navigate(R.id.action_logIn_Fragment_to_hausapothekefragment)
 
-        binding.registerRegisterButton.setOnClickListener {
+        binding.registerButton.setOnClickListener {
             Navigation.findNavController(view)
                 .navigate(R.id.action_logIn_Fragment_to_registrationButton)
             }

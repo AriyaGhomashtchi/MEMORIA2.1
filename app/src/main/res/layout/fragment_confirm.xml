@@ -73,11 +73,12 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/confirm_button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
             android:layout_marginTop="56dp"
             android:backgroundTint="#D2B69F"
+            android:textColor="#686666"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,5 +86,6 @@
             app:strokeColor="#8F9DE1"
             app:strokeWidth="3dp"
             tools:text="Jeden Montag und Mittwoch, 12:00 Uhr " />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

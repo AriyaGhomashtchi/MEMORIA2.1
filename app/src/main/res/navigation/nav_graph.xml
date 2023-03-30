@@ -69,7 +69,11 @@
         android:id="@+id/notizenFragment"
         android:name="com.ghomashtchi.memoria.NotizenFragment"
         android:label="fragment_notizen"
-        tools:layout="@layout/fragment_notizen" />
+        tools:layout="@layout/fragment_notizen" >
+        <action
+            android:id="@+id/action_notizenFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registrationButton"
         android:name="com.ghomashtchi.memoria.RegistrationFragment"
@@ -83,5 +87,9 @@
         android:id="@+id/confirmFragment"
         android:name="com.ghomashtchi.memoria.ConfirmFragment"
         android:label="fragment_confirm"
-        tools:layout="@layout/fragment_confirm" />
+        tools:layout="@layout/fragment_confirm" >
+        <action
+            android:id="@+id/action_confirmFragment_to_hausapothekefragment"
+            app:destination="@id/hausapothekefragment" />
+    </fragment>
 </navigation>

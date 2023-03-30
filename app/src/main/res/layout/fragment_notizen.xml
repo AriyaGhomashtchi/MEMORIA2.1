@@ -96,16 +96,20 @@
                     app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/memento_button2"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:backgroundTint="#909EE2"
                     android:text="memento"
+                    android:textColor="#686666"
+                    app:cornerRadius="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.456"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+                    app:strokeColor="#D2B69F"
+                    app:strokeWidth="3dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
